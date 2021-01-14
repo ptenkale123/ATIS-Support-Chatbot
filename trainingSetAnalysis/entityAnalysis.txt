@@ -1,0 +1,945 @@
+-------------------------------------
+# of Super Entities: 9
+SUPER ENTITIES:
+fromloc
+depart_time
+arrive_time
+return_date
+toloc
+arrive_date
+return_time
+stoploc
+depart_date
+-------------------------------------
+# of Raw Entities: 41
+RAW ENTITIES:
+day_number
+round_trip
+state_name
+fare_amount
+flight_stop
+cost_relative
+period_mod
+connect
+year
+meal_code
+flight_time
+meal_description
+date_relative
+flight_days
+airline_name
+airport_name
+month_name
+flight_number
+country_name
+flight_mod
+start_time
+economy
+aircraft_code
+class_type
+days_code
+airport_code
+today_relative
+period_of_day
+city_name
+fare_basis_code
+state_code
+mod
+day_name
+restriction_code
+or
+transport_type
+end_time
+time
+airline_code
+time_relative
+meal
+-------------------------------------
+SUPER ENTITY: fromloc
+RAW ENTITIES:
+city_name
+airport_code
+airport_name
+state_code
+state_name
+-------------------------------------
+SUPER ENTITY: depart_time
+RAW ENTITIES:
+start_time
+period_of_day
+period_mod
+end_time
+time
+time_relative
+-------------------------------------
+SUPER ENTITY: arrive_time
+RAW ENTITIES:
+start_time
+period_of_day
+period_mod
+end_time
+time
+time_relative
+-------------------------------------
+SUPER ENTITY: return_date
+RAW ENTITIES:
+day_number
+today_relative
+month_name
+day_name
+date_relative
+-------------------------------------
+SUPER ENTITY: toloc
+RAW ENTITIES:
+state_name
+airport_code
+airport_name
+country_name
+city_name
+state_code
+-------------------------------------
+SUPER ENTITY: arrive_date
+RAW ENTITIES:
+day_number
+today_relative
+month_name
+day_name
+date_relative
+-------------------------------------
+SUPER ENTITY: return_time
+RAW ENTITIES:
+period_mod
+period_of_day
+-------------------------------------
+SUPER ENTITY: stoploc
+RAW ENTITIES:
+city_name
+state_code
+airport_name
+-------------------------------------
+SUPER ENTITY: depart_date
+RAW ENTITIES:
+day_number
+date_relative
+day_name
+today_relative
+month_name
+year
+-------------------------------------
+RAW ENTITY: day_number
+VALUES:
+twelve
+seven
+thirteenth
+eighteenth
+ninth
+one
+twenty ninth
+second
+eleventh
+fourteenth
+seventeenth
+twenty first
+fifth
+thirtieth
+tenth
+twenty
+six
+seventeen
+three
+twenty two
+twenty fifth
+eleven
+fourth
+twenty third
+twelfth
+twenty fourth
+sixteenth
+twenty second
+sixth
+seventh
+fifteenth
+eight
+twentieth
+sixteen
+fifteen
+eighth
+four
+third
+twenty eighth
+twenty sixth
+twenty one
+twenty seventh
+twenty six
+thirty first
+nineteenth
+first
+-------------------------------------
+RAW ENTITY: round_trip
+VALUES:
+round trips
+round trip
+return
+one way
+-------------------------------------
+RAW ENTITY: state_name
+VALUES:
+utah
+georgia
+colorado
+new jersey
+washington
+michigan
+missouri
+florida
+minnesota
+north carolina
+pennsylvania
+tennessee
+california
+quebec
+arizona
+indiana
+ohio
+nevada
+texas
+-------------------------------------
+RAW ENTITY: fare_amount
+VALUES:
+1000 dollars
+416 dollars
+150 dollars
+415 dollars
+400 dollars
+1500 dollars
+1288
+466 dollars
+1100 dollars
+932 dollars
+124 dollars
+300 dollars
+500 dollars
+200 dollars
+100
+329 dollars
+-------------------------------------
+RAW ENTITY: flight_stop
+VALUES:
+maximum number of stops
+no stops
+stopovers
+without stopping
+stop
+stops
+nonstops
+directly
+one stop
+nonstop
+-------------------------------------
+RAW ENTITY: cost_relative
+VALUES:
+lowest
+lowest price
+least expensive
+cheapest
+less
+lowest cost
+under
+highest
+most expensive
+-------------------------------------
+RAW ENTITY: period_mod
+VALUES:
+early
+late
+earliest
+-------------------------------------
+RAW ENTITY: connect
+VALUES:
+connections
+connecting
+direct
+connects
+connect
+-------------------------------------
+RAW ENTITY: year
+VALUES:
+1991
+1993
+1992
+year
+-------------------------------------
+RAW ENTITY: meal_code
+VALUES:
+meal code s
+s
+d s
+ls
+sd d
+-------------------------------------
+RAW ENTITY: flight_time
+VALUES:
+schedule for flights
+times of your flights
+schedule
+when
+flight times
+flight schedule
+times
+time of arrival
+flight schedules
+arrival time
+time
+departure time
+times of flight
+departure times
+-------------------------------------
+RAW ENTITY: meal_description
+VALUES:
+snack
+dinner meal
+lunch
+dinner
+supper
+breakfast
+-------------------------------------
+RAW ENTITY: date_relative
+VALUES:
+the following day
+this
+after
+two
+same
+next
+coming
+following
+day
+-------------------------------------
+RAW ENTITY: flight_days
+VALUES:
+daily
+-------------------------------------
+RAW ENTITY: airline_name
+VALUES:
+delta airlines
+northwest airlines
+united airlines
+trans world airline
+eastern airlines
+american airlines
+tower air
+us air
+air canada
+united
+america west
+continental airline
+united airline
+us airlines
+nationair
+continental
+canadian airlines
+alaska airlines
+northwest
+continental airlines
+midwest
+southwest
+eastern
+lufthansa
+usa air
+delta 's
+delta
+delta airline
+eastern airline
+american 's
+southwest airlines
+midway airlines
+northwest airline
+canadian airlines international
+american airline
+american
+lufthansa airlines
+-------------------------------------
+RAW ENTITY: airport_name
+VALUES:
+boston airport
+st. petersburg airport
+orlando international
+dallas airport
+general mitchell
+atlanta airport
+philadelphia airport
+logan
+toronto international airport
+pittsburgh airport
+logan airport
+general mitchell international
+general mitchell airport
+phoenix airport
+dallas fort worth airport
+washington airport
+general mitchell international airport
+salt lake city airport
+la guardia
+lester pearson airport
+la guardia airport
+orlando airport
+philadelphia international airport
+ontario international
+denver airport
+san francisco airport
+love field
+toronto airport
+stapleton international airport
+los angeles international airport
+oakland airport
+o 'hare
+dallas fort worth international
+hartfield
+houston intercontinental
+san francisco international
+milwaukee airport
+san francisco international airport
+stapleton airport
+baltimore airport
+san diego airport
+dulles
+-------------------------------------
+RAW ENTITY: month_name
+VALUES:
+february
+october
+march
+august
+september
+may
+december
+june
+april
+january
+july
+november
+-------------------------------------
+RAW ENTITY: flight_number
+VALUES:
+217
+1209
+1222
+746
+459
+311
+163
+number
+315
+270
+271
+497766
+279
+82
+212
+139
+257
+21
+852
+323
+1059
+838
+345
+405
+1039
+402
+324
+343
+281
+1291
+201
+1083
+771
+2153
+137338
+296
+3357
+229
+71
+3724
+505
+269
+106
+1055
+813
+98
+19
+4400
+928
+415
+417
+352
+210
+825
+297
+539
+1765
+-------------------------------------
+RAW ENTITY: country_name
+VALUES:
+canada
+-------------------------------------
+RAW ENTITY: flight_mod
+VALUES:
+lastest
+cheap
+earliest possible time
+day time
+only weekdays
+weekdays
+next
+late
+during week days
+during the week
+early
+arriving
+latest time possible
+earliest
+shortest
+last
+red eye
+inexpensive
+overnight
+weekday
+latest
+first
+-------------------------------------
+RAW ENTITY: start_time
+VALUES:
+6
+12
+430 pm
+10 am
+1030 am
+1850
+noon
+6 pm
+1133 am
+445
+1 o'clock
+415
+3
+5
+4
+530
+1115 am
+5 pm
+430
+2 pm
+-------------------------------------
+RAW ENTITY: economy
+VALUES:
+economy class
+economy
+-------------------------------------
+RAW ENTITY: aircraft_code
+VALUES:
+dc10
+d10
+747
+733
+767
+m80
+d9s
+727
+73s
+j31
+72s
+737
+757
+100
+f28
+734
+-------------------------------------
+RAW ENTITY: class_type
+VALUES:
+coach
+first class
+coach class
+economic
+business class
+first
+thrift
+-------------------------------------
+RAW ENTITY: days_code
+VALUES:
+sa
+-------------------------------------
+RAW ENTITY: airport_code
+VALUES:
+mco
+jfk
+iah
+sfo
+bur
+atl
+dfw
+oak
+yyz
+mia
+hou
+lax
+bwi
+ewr
+ord
+bna
+-------------------------------------
+RAW ENTITY: today_relative
+VALUES:
+the day after tomorrow
+the following day
+tonight
+this
+tomorrow
+today
+-------------------------------------
+RAW ENTITY: period_of_day
+VALUES:
+evening
+late afternoon
+afternoons
+am
+midnight
+lunch time
+morning
+early
+nighttime
+mornings
+afternoon
+night
+pm
+nights
+dinnertime
+-------------------------------------
+RAW ENTITY: city_name
+VALUES:
+charlotte
+vegas
+milwaukee
+houston
+boston
+washington
+st. petersburg
+salt lake city
+burbank
+cleveland
+san francisco
+tacoma
+philly
+westchester
+oakland
+nashville
+dallas
+memphis
+san diego
+philadelphia
+denver
+newark
+dallas fort worth
+new york
+city of boston
+cincinnati
+st. louis
+columbus
+indianapolis
+new york 's
+city in dallas
+phoenix
+pittsburgh
+new york city
+san jose
+kansas city
+ontario
+minneapolis
+atlanta
+seattle
+chicago
+tampa
+toronto
+bay area
+miami
+la
+orlando
+fort worth
+detroit
+long beach
+las vegas
+montreal
+los angeles
+salt lake
+westchester county
+st. paul
+baltimore
+atlanta 's
+-------------------------------------
+RAW ENTITY: fare_basis_code
+VALUES:
+c
+b
+qw
+yn
+h
+qx fare
+f
+m
+q
+q fares
+qo
+qx
+y
+k
+fn
+-------------------------------------
+RAW ENTITY: state_code
+VALUES:
+dc
+-------------------------------------
+RAW ENTITY: mod
+VALUES:
+least
+closest
+after
+two
+same
+doesn 't
+most
+smallest
+greatest
+besides
+largest
+instead
+total
+other
+more
+-------------------------------------
+RAW ENTITY: day_name
+VALUES:
+sunday 's
+saturdays
+monday
+thursdays
+tuesday
+friday
+friday 's
+wednesday
+thursday
+sundays
+sunday
+fridays
+mondays
+wednesdays
+wednesday 's
+tuesdays
+saturday
+weekday
+-------------------------------------
+RAW ENTITY: restriction_code
+VALUES:
+ap68
+ap 57
+ap 55
+ap57
+ap 80
+ap
+ap80
+-------------------------------------
+RAW ENTITY: or
+VALUES:
+or
+-------------------------------------
+RAW ENTITY: transport_type
+VALUES:
+taxi
+air taxi operation
+limousines
+car
+rental cars
+car rentals
+car rental
+train
+limo
+rental car
+airport limousine
+limousine
+-------------------------------------
+RAW ENTITY: end_time
+VALUES:
+630 pm
+6 pm
+530 pm
+10 pm
+1245 pm
+3 pm
+43 pm
+5 pm
+1 o'clock
+8 pm
+3 o'clock
+2
+7 pm
+4
+1130 am
+5 o'clock
+730 pm
+515 pm
+2 pm
+-------------------------------------
+RAW ENTITY: time
+VALUES:
+7 o'clock pm
+5 o'clock am
+8 o'clock
+1 pm
+130
+10 o'clock
+7 am
+1145 am
+9 am
+8 o'clock am
+2 o'clock
+819
+1940
+4
+8
+838 am
+1020 pm
+8 am
+12 pm
+10
+9 o'clock am
+934 pm
+5 o'clock pm
+615 pm
+1700
+6 o'clock pm
+1220 pm
+110 pm
+530
+823
+705
+10 o'clock pm
+6 o'clock
+838
+3 o'clock
+428
+3
+7
+3 pm
+420
+1017
+630 pm
+230 pm
+720 am
+723 pm
+305
+11 pm
+1200 hours
+7 pm
+0900
+9 pm
+210 pm
+845
+noontime
+755 am
+1045 am
+430 pm
+9 o'clock pm
+10 am
+2 o'clock pm
+6 pm
+one
+1700 hours
+2 pm
+1158 pm
+1205
+2
+650
+6
+630
+718 am
+755
+9 o'clock
+11 o'clock am
+12 noon
+1505
+324 pm
+5 pm
+1 o'clock
+5 o'clock
+1600 hours
+4 o'clock pm
+1024
+1026
+530 pm
+11 am
+evening
+2100
+mealtime
+1300 hours
+12 o'clock
+555
+7 o'clock am
+1230 pm
+230
+2134
+4 pm
+815 am
+3 o'clock pm
+4 o'clock
+1
+1110
+5
+9
+8 o'clock pm
+12 o'clock noon
+8 pm
+eight
+645 am
+810 pm
+630 am
+7 o'clock
+10 pm
+time
+225 pm
+noon
+-------------------------------------
+RAW ENTITY: airline_code
+VALUES:
+aa
+dl
+twa
+co
+hp
+ea
+ac
+us
+as
+ff
+cp
+ua
+nw
+-------------------------------------
+RAW ENTITY: time_relative
+VALUES:
+about
+after
+afterwards
+around
+earlier
+vicinity
+approximately
+later
+no later than
+near
+close
+by
+before
+-------------------------------------
+RAW ENTITY: meal
+VALUES:
+meals
+meal
