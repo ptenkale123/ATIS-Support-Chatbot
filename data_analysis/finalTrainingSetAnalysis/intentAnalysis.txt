@@ -1,0 +1,484 @@
+-------------------------------------
+# of samples (total): 4951
+-------------------------------------
+# of Intents: 16
+INTENTS:
+city 19
+capacity 16
+distance 20
+flight_no 12
+airport 20
+meal 6
+abbreviation 147
+aircraft 81
+ground_fare 18
+restriction 6
+airline 157
+airfare 423
+flight 3666
+ground_service 255
+flight_time 54
+quantity 51
+-------------------------------------
+INTENT: city
+# of Samples: 19
+SUPER ENTITIES:
+fromloc
+toloc
+depart_time
+RAW ENTITIES:
+depart_time.time_relative 1
+depart_time.period_of_day 1
+fromloc.airport_code 1
+fromloc.city_name 1
+depart_time.time 1
+toloc.city_name 1
+airport_code 3
+airline_name 12
+airport_name 3
+city_name 2
+-------------------------------------
+INTENT: capacity
+# of Samples: 16
+SUPER ENTITIES:
+fromloc
+toloc
+RAW ENTITIES:
+fromloc.city_name 2
+toloc.city_name 2
+aircraft_code 11
+airline_name 2
+mod 1
+-------------------------------------
+INTENT: distance
+# of Samples: 20
+SUPER ENTITIES:
+depart_date
+fromloc
+toloc
+depart_time
+RAW ENTITIES:
+depart_date.day_number 1
+depart_date.month_name 1
+fromloc.airport_name 13
+fromloc.city_name 8
+depart_time.time 1
+toloc.city_name 14
+-------------------------------------
+INTENT: flight_no
+# of Samples: 12
+SUPER ENTITIES:
+fromloc
+depart_time
+arrive_time
+toloc
+stoploc
+depart_date
+RAW ENTITIES:
+depart_date.today_relative 1
+depart_time.time_relative 1
+arrive_time.time_relative 2
+depart_time.period_of_day 1
+depart_date.day_number 1
+depart_date.month_name 1
+depart_date.day_name 2
+fromloc.state_name 1
+stoploc.city_name 1
+fromloc.city_name 11
+toloc.state_code 1
+arrive_time.time 2
+toloc.state_name 1
+depart_time.time 2
+toloc.city_name 11
+cost_relative 2
+flight_number 2
+airline_name 4
+flight_time 1
+flight_mod 1
+class_type 2
+or 1
+-------------------------------------
+INTENT: airport
+# of Samples: 20
+SUPER ENTITIES:
+fromloc
+toloc
+RAW ENTITIES:
+fromloc.city_name 2
+toloc.city_name 1
+airport_name 4
+flight_stop 1
+state_code 2
+city_name 12
+mod 1
+-------------------------------------
+INTENT: meal
+# of Samples: 6
+SUPER ENTITIES:
+fromloc
+toloc
+RAW ENTITIES:
+toloc.airport_code 1
+fromloc.city_name 4
+toloc.city_name 3
+flight_number 2
+airline_name 2
+meal 6
+-------------------------------------
+INTENT: abbreviation
+# of Samples: 147
+SUPER ENTITIES:
+fromloc
+toloc
+RAW ENTITIES:
+fromloc.city_name 1
+restriction_code 19
+toloc.city_name 1
+fare_basis_code 66
+aircraft_code 1
+airport_code 25
+airline_name 3
+airline_code 27
+class_type 2
+days_code 3
+meal_code 6
+meal 4
+mod 1
+-------------------------------------
+INTENT: aircraft
+# of Samples: 81
+SUPER ENTITIES:
+fromloc
+depart_time
+arrive_time
+toloc
+arrive_date
+stoploc
+depart_date
+RAW ENTITIES:
+depart_time.time_relative 20
+arrive_time.time_relative 1
+depart_time.period_of_day 7
+depart_date.day_number 6
+depart_date.month_name 6
+arrive_date.day_number 3
+arrive_date.month_name 3
+arrive_date.day_name 1
+depart_date.day_name 4
+stoploc.city_name 4
+fromloc.city_name 62
+toloc.state_code 3
+arrive_time.time 1
+depart_time.time 25
+toloc.city_name 61
+flight_number 8
+aircraft_code 3
+airline_name 24
+airline_code 6
+flight_mod 3
+class_type 7
+mod 8
+-------------------------------------
+INTENT: ground_fare
+# of Samples: 18
+SUPER ENTITIES:
+fromloc
+toloc
+RAW ENTITIES:
+fromloc.airport_name 3
+fromloc.city_name 2
+toloc.city_name 1
+transport_type 17
+airport_name 2
+city_name 12
+-------------------------------------
+INTENT: restriction
+# of Samples: 6
+SUPER ENTITIES:
+fromloc
+toloc
+RAW ENTITIES:
+fromloc.city_name 2
+restriction_code 4
+toloc.city_name 2
+cost_relative 1
+fare_amount 1
+round_trip 1
+-------------------------------------
+INTENT: airline
+# of Samples: 157
+SUPER ENTITIES:
+fromloc
+stoploc
+arrive_date
+arrive_time
+toloc
+depart_time
+depart_date
+RAW ENTITIES:
+depart_date.today_relative 2
+arrive_time.period_of_day 2
+depart_time.time_relative 2
+depart_date.date_relative 1
+depart_time.period_of_day 7
+depart_date.day_number 4
+depart_date.month_name 4
+arrive_date.day_number 1
+arrive_date.month_name 1
+fromloc.airport_code 1
+fromloc.airport_name 3
+depart_date.day_name 5
+fromloc.state_code 2
+toloc.airport_name 1
+stoploc.city_name 12
+fromloc.city_name 111
+toloc.state_code 4
+arrive_time.time 1
+depart_time.time 3
+toloc.city_name 110
+cost_relative 2
+flight_number 3
+aircraft_code 1
+airline_name 2
+airport_name 2
+airline_code 22
+flight_stop 3
+flight_days 1
+round_trip 1
+class_type 12
+city_name 7
+connect 1
+mod 8
+-------------------------------------
+INTENT: airfare
+# of Samples: 423
+SUPER ENTITIES:
+fromloc
+stoploc
+arrive_date
+arrive_time
+depart_date
+toloc
+depart_time
+return_date
+RAW ENTITIES:
+depart_date.today_relative 1
+arrive_time.time_relative 3
+depart_time.time_relative 3
+arrive_date.date_relative 1
+depart_date.date_relative 3
+depart_time.period_of_day 14
+depart_time.period_mod 1
+depart_date.day_number 40
+arrive_date.day_number 2
+arrive_date.month_name 2
+return_date.day_number 1
+depart_date.month_name 40
+return_date.month_name 1
+fromloc.airport_code 2
+arrive_date.day_name 1
+fromloc.airport_name 2
+depart_date.day_name 34
+fromloc.state_name 1
+toloc.airport_name 3
+toloc.airport_code 5
+stoploc.city_name 5
+fromloc.city_name 420
+toloc.state_code 4
+arrive_time.time 3
+toloc.state_name 2
+depart_time.time 4
+depart_date.year 2
+toloc.city_name 411
+cost_relative 159
+flight_number 34
+aircraft_code 1
+airline_name 55
+airline_code 18
+fare_amount 26
+flight_stop 4
+flight_time 1
+flight_days 1
+round_trip 181
+flight_mod 2
+class_type 90
+connect 1
+economy 15
+meal 1
+or 2
+-------------------------------------
+INTENT: flight
+# of Samples: 3666
+SUPER ENTITIES:
+fromloc
+depart_time
+arrive_time
+return_date
+toloc
+arrive_date
+return_time
+stoploc
+depart_date
+RAW ENTITIES:
+depart_date.today_relative 74
+arrive_date.today_relative 2
+return_date.today_relative 1
+depart_time.time_relative 286
+return_time.period_of_day 3
+arrive_date.date_relative 10
+arrive_time.period_of_day 62
+depart_date.date_relative 74
+return_date.date_relative 10
+arrive_time.time_relative 179
+depart_time.period_of_day 548
+return_date.day_number 3
+arrive_time.start_time 21
+return_time.period_mod 2
+depart_time.period_mod 43
+depart_date.day_number 326
+return_date.month_name 3
+depart_date.month_name 310
+depart_time.start_time 25
+arrive_time.period_mod 4
+arrive_date.month_name 40
+arrive_date.day_number 40
+arrive_date.day_name 86
+depart_time.end_time 25
+arrive_time.end_time 20
+fromloc.airport_code 11
+return_date.day_name 1
+stoploc.airport_name 1
+depart_date.day_name 830
+fromloc.airport_name 39
+stoploc.state_code 5
+toloc.airport_name 32
+fromloc.state_code 44
+fromloc.state_name 37
+toloc.airport_code 13
+toloc.country_name 3
+stoploc.city_name 216
+fromloc.city_name 3588
+toloc.state_code 74
+meal_description 56
+arrive_time.time 199
+toloc.state_name 74
+depart_time.time 321
+depart_date.year 23
+toloc.city_name 3606
+fare_basis_code 5
+cost_relative 173
+flight_number 32
+aircraft_code 13
+period_of_day 1
+airline_name 553
+airport_name 6
+airline_code 58
+fare_amount 21
+flight_stop 157
+flight_time 14
+flight_days 36
+round_trip 157
+flight_mod 315
+class_type 84
+city_name 10
+connect 38
+economy 20
+meal 35
+mod 11
+or 62
+-------------------------------------
+INTENT: ground_service
+# of Samples: 255
+SUPER ENTITIES:
+depart_date
+fromloc
+toloc
+RAW ENTITIES:
+depart_date.date_relative 1
+depart_date.day_number 1
+depart_date.month_name 1
+fromloc.airport_name 27
+depart_date.day_name 1
+toloc.airport_name 2
+fromloc.city_name 18
+toloc.city_name 31
+today_relative 2
+transport_type 31
+period_of_day 4
+time_relative 1
+airport_name 20
+airport_code 1
+flight_time 1
+day_number 2
+state_name 2
+month_name 2
+state_code 6
+city_name 183
+day_name 5
+time 2
+or 1
+-------------------------------------
+INTENT: flight_time
+# of Samples: 54
+SUPER ENTITIES:
+depart_date
+fromloc
+toloc
+depart_time
+RAW ENTITIES:
+depart_time.time_relative 3
+depart_date.date_relative 2
+depart_time.period_of_day 13
+depart_date.day_number 8
+depart_date.month_name 8
+fromloc.airport_name 1
+depart_date.day_name 11
+toloc.airport_code 1
+fromloc.city_name 49
+meal_description 1
+depart_time.time 5
+toloc.city_name 48
+aircraft_code 1
+flight_number 1
+airline_name 13
+airport_name 1
+airline_code 2
+flight_time 53
+class_type 1
+flight_mod 7
+-------------------------------------
+INTENT: quantity
+# of Samples: 51
+SUPER ENTITIES:
+depart_time
+fromloc
+arrive_date
+arrive_time
+toloc
+stoploc
+depart_date
+RAW ENTITIES:
+depart_date.today_relative 6
+depart_time.time_relative 1
+arrive_time.time_relative 1
+depart_time.period_of_day 2
+depart_date.day_number 4
+depart_date.month_name 4
+arrive_date.day_number 1
+arrive_date.month_name 1
+toloc.airport_name 1
+stoploc.city_name 1
+fromloc.city_name 20
+arrive_time.time 1
+depart_time.time 1
+toloc.city_name 15
+fare_basis_code 5
+flight_number 1
+airline_name 29
+airline_code 3
+flight_stop 3
+flight_days 1
+round_trip 2
+class_type 19
+city_name 1
+economy 1

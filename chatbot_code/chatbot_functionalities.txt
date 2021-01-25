@@ -1,0 +1,157 @@
+
+ALL APIs:
+
+1. Bing Search
+- just return first result of whatever search string you're given
+2. Google Places
+- get the coordinate for a particular location
+3. Google Distance Matrix
+- return distance from two locations
+
+
+ALL POSSIBLE FUNCTIONALITIES:
+
+- Whenver you're checking cities, check state_code too and see if it's
+  equal to 'dc'
+
+1. Get information about flights from one location to another 
+    Must have the following entities:
+    - fromloc.airport_name/fromloc.airport_code/fromloc.city_name
+    - toloc.airport_name/toloc.airport_code/toloc.city_name
+    One or both of the following entities:
+    - depart_date
+    - arrive_date
+    - if the two entities above aren't present, just do one way w/ current date
+
+    FLIGHT_ROUTES
+
+    Action:
+        - Send a kayak.com link and sort by best flight
+        - https://www.kayak.com/flights/SFO-MIA/2021-02-17/2021-02-24?sort=bestflight_a
+        OR
+        - https://www.kayak.com/flights/SFO-MIA/2021-02-17?sort=bestflight_a
+
+    What you need:
+        - convert airport names/city names to airport airport_code 
+        you can use aviationstack
+        - get current date and get relative dates from current
+
+
+2. Get information about a specific flight
+    Must have these two entities:
+    - airline_code (ua, dl, etc.)
+    - flight_number (just a #)
+
+    FLIGHT_NO
+
+    Action:
+        - Send a kayak.com link (with current date at the end)
+        - https://www.kayak.com/tracker/UA-2344/2021-01-18
+    
+    What you need:
+        - get current date for flight tracker
+
+3. Get information about ground transportation for specific city or airport name
+    One of the following entities:
+    - city_name
+    - airport_name
+    - airport_code
+
+    GROUND
+
+    Action:
+        - just use Bing Search API and send link for first result
+        - "ground transportation for [INSERT city/airport]"
+    
+    What you need:
+        - Bing Search API
+
+4. Get meaning of an abbreviation:
+    One of the following entities:
+    - airport_code
+    - airline_code
+    - fare_basis_code
+    - restriction_code
+    - meal_code
+    - aircraft_code
+
+    ABBREVIATION
+
+    Action:
+        - for airport_code
+            - .csv file with all airports
+            - https://github.com/datasets/airport-codes/blob/master/data/airport-codes.csv
+        - for airline_code
+            - https://github.com/jpatokal/openflights/blob/master/data/airlines.dat
+        - for fare_basis_code:
+            - 'IDK' response w/ generic link
+        - for restriction_code:
+            - 'IDK' response w/ generic link
+        - for meal_code:
+            - 'IDK' response w/ generic link
+        - for aircraft_code:
+            - search for the aircraft code in this dataset:
+            - https://github.com/jpatokal/openflights/blob/master/data/planes.dat
+
+    What you need:
+        -the .csv file to find airport_codes
+        -aviationstack api
+
+5. Get list of airports in a specific city/state:
+    One of the following entities:
+    - city_name
+    - state_name
+
+    LIST_AIRPORTS
+
+    Action:
+        - Bing Search API, send link for first result
+        - "list of airports in [INSERT city/state]"
+
+    What you need:
+        - Bing Search API
+
+6. Get information about a specific airport:
+    Must have this entity:
+    - airport_name
+    - airport_code
+
+    AIRPORT
+
+    Action:
+        - Bing Search API, send link for first result
+        - "[INSERT airport] official website"
+
+    What you need:
+        - Bing Search API
+
+7. Get distance between two locations:
+    Must have the following entities:
+    - fromloc.airport_name/fromloc.airport_code/fromloc.city_name
+    - toloc.airport_name/toloc.airport_code/toloc.city_name
+
+    DISTANCE_TWO_LOCATIONS
+
+    Action:
+        - Use Places API to get coordinates for the two locations
+        - Use Google Distance Matrix API to return distance in miles between two locations
+        - Say "For more information on exact times consult https://flighttime-calculator.com”
+
+    What you need:
+        - Places API
+        - Google Distance Matrix API
+
+8. Get distance between airport and downtown of city:
+    Must have this entity:
+    - fromloc.city_name / city_name
+
+    DISTANCE_ONE_CITY
+
+    Action:
+        - if fromloc.city_name or city_name is not found, ask user to re-enter query
+        - Use Places API to get coordinates for "[city_name] airport" and "[city_name]"
+        - Use Google Distance Matrix API to return distance in miles between two locations
+    
+    What you need:
+        - Places API
+        - Google Distance Matrix API
