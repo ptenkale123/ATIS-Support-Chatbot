@@ -1,7 +1,6 @@
 import requests
 import math
-
-GOOGLE_API_KEY = 'AIzaSyDWWE27IOzFaMZB4T5NzRhC-uJ9xYN1ojI'
+from .api_keys import GOOGLE_API_KEY
 
 PLACE_API_URL = 'https://maps.googleapis.com/maps/api/place/textsearch/json'
 DIST_MATRIX_API_URL = 'https://maps.googleapis.com/maps/api/distancematrix/json'
@@ -52,4 +51,4 @@ def get_route_distance(location1, location2):
 
 if __name__ == "__main__":
     print(get_physical_distance((37.6213129, -122.36840685), (37.5629917,  -122.3255254)))
-    print(get_route_distance(get_coordinates('shdfgh'), get_coordinates('fgjghj')))
+    print(get_route_distance(get_coordinates('SFO'), get_coordinates('San Mateo')))

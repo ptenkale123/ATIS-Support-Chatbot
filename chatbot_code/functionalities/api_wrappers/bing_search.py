@@ -1,8 +1,7 @@
 import requests
+from .api_keys import BING_API_KEY
 
 BING_SEARCH_API_URL = 'https://api.bing.microsoft.com/v7.0/search'
-
-BING_API_KEY = '9d6c5d50278b4ecba10c7d191b8c87b1'
 
 def get_first_result(queryStr):
     searchRes = requests.get(BING_SEARCH_API_URL, headers={'Ocp-Apim-Subscription-Key': BING_API_KEY}, params={'q':queryStr}).json()
