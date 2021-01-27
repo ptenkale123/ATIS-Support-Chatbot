@@ -9,4 +9,4 @@ Steps to run the project:
 3. Open another terminal, cd into '/chatbot_code' and run 'python3 chatbot.py'. You can type in this terminal for all your queries
 
 I use Google Places + Google Distance Matrix + Bing Search APIs. 
-The API keys that I use are not publicly available, so you will need to request those from Google Cloud Platform and Microsoft Azure.
+The API keys that I use are not available on this public repository, so you will need to request those from Google Cloud Platform and Microsoft Azure.
