@@ -11,10 +11,7 @@ ALL APIs:
 
 ALL POSSIBLE FUNCTIONALITIES:
 
-- Whenver you're checking cities, check state_code too and see if it's
-  equal to 'dc'
-
-1. Get information about flights from one location to another 
+1. Get information about flights from one location to another   (Not implemented yet)
     Must have the following entities:
     - fromloc.airport_name/fromloc.airport_code/fromloc.city_name
     - toloc.airport_name/toloc.airport_code/toloc.city_name
@@ -37,7 +34,7 @@ ALL POSSIBLE FUNCTIONALITIES:
         - get current date and get relative dates from current
 
 
-2. Get information about a specific flight
+2. Get information about a specific flight   (Implemented)
     Must have these two entities:
     - airline_code (ua, dl, etc.)
     - flight_number (just a #)
@@ -51,7 +48,7 @@ ALL POSSIBLE FUNCTIONALITIES:
     What you need:
         - get current date for flight tracker
 
-3. Get information about ground transportation for specific city or airport name
+3. Get information about ground transportation for specific city or airport name   (Implemented)
     One of the following entities:
     - city_name
     - airport_name
@@ -66,7 +63,7 @@ ALL POSSIBLE FUNCTIONALITIES:
     What you need:
         - Bing Search API
 
-4. Get meaning of an abbreviation:
+4. Get meaning of an abbreviation:   (Implemented)
     One of the following entities:
     - airport_code
     - airline_code
@@ -94,10 +91,10 @@ ALL POSSIBLE FUNCTIONALITIES:
             - https://github.com/jpatokal/openflights/blob/master/data/planes.dat
 
     What you need:
-        -the .csv file to find airport_codes
+        -the .csv files to find airport_codes
         -aviationstack api
 
-5. Get list of airports in a specific city/state:
+5. Get list of airports in a specific city/state:   (Implemented)
     One of the following entities:
     - city_name
     - state_name
@@ -111,7 +108,7 @@ ALL POSSIBLE FUNCTIONALITIES:
     What you need:
         - Bing Search API
 
-6. Get information about a specific airport:
+6. Get information about a specific airport:   (Implemented)
     Must have this entity:
     - airport_name
     - airport_code
@@ -125,7 +122,7 @@ ALL POSSIBLE FUNCTIONALITIES:
     What you need:
         - Bing Search API
 
-7. Get distance between two locations:
+7. Get distance between two locations:   (Implemented)
     Must have the following entities:
     - fromloc.airport_name/fromloc.airport_code/fromloc.city_name
     - toloc.airport_name/toloc.airport_code/toloc.city_name
@@ -141,7 +138,7 @@ ALL POSSIBLE FUNCTIONALITIES:
         - Places API
         - Google Distance Matrix API
 
-8. Get distance between airport and downtown of city:
+8. Get distance between airport and downtown of city:  (Implemented)
     Must have this entity:
     - fromloc.city_name / city_name
 
